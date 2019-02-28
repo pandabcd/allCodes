@@ -1,0 +1,6 @@
+?1. Have only those functions in class which cannot be declared outside of it without much inconvinience.
+e.g Have a look at function "calculateWinner" in tic-tac-toe code, it could have been inside the board class too.
+
+2. If a class has only render method, rather define it as a function and pass props in the parameter.
+e.g Square in tic-tac-toe
+Have a look at https://reactjs.org/tutorial/tutorial.html and search "function components".
