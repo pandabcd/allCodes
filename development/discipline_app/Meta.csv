@@ -1,6 +1,6 @@
-,Unnamed: 0,Unnamed: 0.1,Field,Check Frequency,Next Check
-0,0,0,Football,3,2019-03-14
-1,1,1,Strength_training,1,2019-03-01
-2,2,2,Study,7,2019-03-01
-3,3,3,Mobile_usage,7,2019-03-01
-4,4,4,Screen_Unlock_times,7,2019-03-01
+Unnamed: 0,Field,Check Frequency,Next Check
+0,Football,1,2019-03-10
+1,Strength_training,1,2019-03-01
+2,Study,7,2019-03-01
+3,Mobile_usage,7,2019-03-01
+4,Screen_Unlock_times,7,2019-03-01
