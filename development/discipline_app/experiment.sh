@@ -19,17 +19,22 @@ while  read -r line || [[ -n "$line" ]]; do    		# [[-n "$line"]] used to read f
     freq=${vals[2]};
     next_check=${vals[3]};
     
-    field_arr+=($field)
+    field_arr+=($field)								#Creating an array of all the fields
     # echo "Enter input for $field!"
     # read -e value;
     # echo "Value entered = $value";
 done < data/Meta.csv
 
-len=${#field_arr[@]};
+# Deleting previous content if any(or creating an empty file)
+echo -n > last_log.txt
 
-echo $len;
-for (( i=0; i<$len; i++ )); do 
+# Reading value for all the fields
+len=${#field_arr[@]};
+for (( i=1; i<$len; i++ )); do 
 	echo "Enter value for: ${field_arr[$i]}" ; 
+	read value
+	echo "Entered value is: $value"
+	echo "${field_arr[$i]},$value">>last_log.txt
 done
 
 # echo ${field_arr[0]};
