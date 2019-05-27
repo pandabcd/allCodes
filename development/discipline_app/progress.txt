@@ -1,0 +1,1 @@
+gnome-terminal  --command="bash -c '/home/subhodeep/Desktop/allCodes/development/discipline_app/experiment.sh;$SHELL'"

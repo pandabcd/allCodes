@@ -1,12 +1,3 @@
-# export IFS=","
-# while  read -r line || [[ -n "$line" ]]; do
-#     # echo "Text read from file: $line"
-#     for i in $line;
-#     	do echo $i;
-#     done
-#     echo ;
-# done < data/Meta.csv
-
 # I am sorry for commenting on every line but I am a shell noob and dont want take chances for future.
 
 field_arr=()
@@ -23,25 +14,24 @@ while  read -r line || [[ -n "$line" ]]; do    		# [[-n "$line"]] used to read f
     # echo "Enter input for $field!"
     # read -e value;
     # echo "Value entered = $value";
-done < data/Meta.csv
+done < $TEMP/data/Meta.csv
 
 # Deleting previous content if any(or creating an empty file)
-echo -n > last_log.txt
+echo "Creating empty log file for today..."
+echo
+echo -n > $TEMP/last_log.txt
 
+# Give an option of changing the entered values
 # Reading value for all the fields
 len=${#field_arr[@]};
 for (( i=1; i<$len; i++ )); do 
 	echo "Enter value for: ${field_arr[$i]}" ; 
 	read value
-	echo "Entered value is: $value"
-	echo "${field_arr[$i]},$value">>last_log.txt
+	echo "${field_arr[$i]},$value">>$TEMP/last_log.txt
 done
 
-# echo ${field_arr[0]};
-# echo ${field_arr[1]};
-# echo ${field_arr[2]};
-# echo ${field_arr[3]};
+echo "Log file for today updated"
+echo "Updating main log file now..."
+echo
 
-# for val in field_arr;do
-# 	echo "$val";
-# done
+# python $TEMP/update_log.py

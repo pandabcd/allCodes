@@ -1,0 +1,28 @@
+2019-03-04 03:49:41.311673
+Football,1
+Strength_training,1
+Study,1
+Mobile_usage,1
+Screen_Unlock_times,1
+
+2019-03-04 03:50:05.051423
+Football,1
+Strength_training,1
+Study,1
+Mobile_usage,1
+Screen_Unlock_times,1
+
+2019-03-04 04:22:51.203772
+Football,1
+Strength_training,1
+Study,1
+Mobile_usage,1
+Screen_Unlock_times,1
+
+2019-03-07 00:04:49.882803
+Football,1
+Strength_training,1
+Study,1
+Mobile_usage,1
+Screen_Unlock_times,1
+
